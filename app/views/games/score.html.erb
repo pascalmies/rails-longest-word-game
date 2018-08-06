@@ -1,0 +1,7 @@
+<h1>Games#score</h1>
+<% if @validity == true  %>
+<p> <%= "CONGRATS #{params[:guess]} is correct! Your score is #{session[:user_score]}" %></p>
+<% else  %>
+<p> <%= "BUMMER, #{params[:guess]} is not correct!" %></p>
+<% end %>
+<p><%= link_to "NEW GAME JAAAAAAA", new_path %></p>
